@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("BusinessCometMAIBAAnalyzeAdFields.relayprovider",["IsSiteBizWeb.relayprovider","MAIBAR21FBGate.entrypointutils","MAIBAR21MBSGate.entrypointutils"],(function(t,n,r,o,a,i,l){"use strict";var e={get:function(){return r("IsSiteBizWeb.relayprovider").get()?o("MAIBAR21MBSGate.entrypointutils").isMAIBAR21MBSActorEnabled():o("MAIBAR21FBGate.entrypointutils").isMAIBAR21FBActorEnabled()}};l.default=e}),98);
+__d("ProjectCasaProdashInsightsGK.relayprovider",["gkx"],(function(t,n,r,o,a,i,l){"use strict";var e={get:function(){return r("gkx")("18919")?!0:r("gkx")("18174")}};l.default=e}),98);
+__d("ProdashWebCasaPageLevelInsightsGK.relayprovider",["ProdashWebIGContentGK.relayprovider","ProjectCasaProdashInsightsGK.relayprovider","gkx","qex"],(function(t,n,r,o,a,i,l){"use strict";var e={get:function(){var e;return r("gkx")("11553")||r("ProjectCasaProdashInsightsGK.relayprovider").get()&&r("ProdashWebIGContentGK.relayprovider").get()&&((e=r("qex")._("3996"))!=null?e:!1)}};l.default=e}),98);
